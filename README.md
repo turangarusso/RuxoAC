@@ -46,7 +46,7 @@
   - Anti unistall system, don't delete the folder by hand, use the terminal!
 * Anti Vehicle Spawn. 
 * Anti good mode.
-* (FIXED) Anti invisibility.
+* (NEW) Anti invisibility.
 * Anti weapon spawn.
 * Anti entity spawn.
 * (IMPROVED) Mod Menu detection.
@@ -59,6 +59,7 @@
 * Anti teleport
 * Anti spectate
 * (FIXED) Screenshot of player screen when detect an injection
+  - Also send a screenshot on discord log when a trigger key is pressed!
 * (IMPROVED) Discord Log system
 * NUI
 * And more...
