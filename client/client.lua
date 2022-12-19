@@ -15,7 +15,7 @@ end)
 
 RegisterNetEvent("Fnx:RequestScreen")
 AddEventHandler("Fnx:RequestScreen",function (arg)
-    exports['screenshot-basic']:requestScreenshotUpload("https://discord.com/api/webhooks/995114245429674095/S29GMnotTFTFynB4kvUMqayT9EctBUOE83kk35tMinhxIG0rYcdpj2LFpLXhH8KLUr_w", 'files[]', function(data)
+    exports['screenshot-basic']:requestScreenshotUpload("webhook", 'files[]', function(data)
         local resp = json.decode(data)
         local upload = resp.files[1].url
         TriggerServerEvent("Fnx:SendScreenRequest",arg,upload)
@@ -204,7 +204,7 @@ end)
 
 
 Screen = function ()
-    exports['screenshot-basic']:requestScreenshotUpload("https://discord.com/api/webhooks/995114245429674095/S29GMnotTFTFynB4kvUMqayT9EctBUOE83kk35tMinhxIG0rYcdpj2LFpLXhH8KLUr_w", 'files[]', function(data)
+    exports['screenshot-basic']:requestScreenshotUpload("webhook", 'files[]', function(data)
 		local resp = json.decode(data)
 		local upload = resp.files[1].url
 	    TriggerServerEvent("Fnx:SendRequesScreenPlayer",upload,"player")
@@ -273,12 +273,8 @@ if FenixACC.ScreenKey then
 	end)
 end
 
-
-
-
-
 ScreenKey = function (id)
-	exports['screenshot-basic']:requestScreenshotUpload("https://discord.com/api/webhooks/995114245429674095/S29GMnotTFTFynB4kvUMqayT9EctBUOE83kk35tMinhxIG0rYcdpj2LFpLXhH8KLUr_w", 'files[]', function(data)
+	exports['screenshot-basic']:requestScreenshotUpload("webhook", 'files[]', function(data)
 		local resp = json.decode(data)
 		local upload = resp.files[1].url
 		TriggerServerEvent('Fnx:SendRequesScreenPlayer',upload,id)	
