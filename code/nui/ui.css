@@ -1,0 +1,92 @@
+div { border: 0; outline: 0; vertical-align: baseline; background: transparent; margin: 0; padding: 0; }
+:focus { outline: 0; }
+::selection { background: transparent; }
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+#actionmenu {
+	top: 25%;
+	left: 90%;
+	display: none;
+	position: fixed;
+	transform: translate(-50%,-50%);
+}
+
+#actionmenu button {
+	-webkit-appearance: none;
+	background: -webkit-gradient(to right, #222222 50%,#1E90FF 71%, #0000FF 100%);
+	background: linear-gradient(to right, #222222 50%, #1E90FF 71%,#0000FF 100%);
+	background-size: 300%;
+	border: none;
+	border-radius: 0.7rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.9em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 3.5rem;
+	letter-spacing: 0.2em;
+	margin-top: 10px;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 18rem;
+}
+i{
+	font-size: 20px;
+	position: fixed;
+	left: 10px;
+
+
+}
+#actionmenu button:hover {
+	animation-name: gradient;
+	-webkit-animation-name: gradient;
+	animation-duration: 2s;
+	-webkit-animation-duration: s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#mainmenu #menuoption-fechar {
+	-webkit-appearance: none;
+	background: -webkit-gradient(to right, #222222 50%,#FF0000 71%,#B22222 100%);
+	background: linear-gradient(to right, #222222 50%, #FF0000 71%,#B22222 100%);
+	background-size: 300%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#mainmenu .menuoption-main {
+	-webkit-appearance: none;
+	background: -webkit-gradient(to right, #222222 50%,#FFD700 71%,#FF8C00 100%);
+	background: linear-gradient(to right, #222222 50%, #FFD700 71%,#FF8C00 100%);
+	background-size: 300%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+@keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	100% {
+	  background-position: 100%;
+	}
+  }
