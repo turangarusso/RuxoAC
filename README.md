@@ -43,12 +43,12 @@
 ## Key Features
 
 * Anti resource stop
-  - Anti unistall system.
-* Anti Vehicle Spown. 
+  - Anti unistall system, don't delete the folder by hand, use the terminal!
+* Anti Vehicle Spawn. 
 * Anti good mode.
 * (FIXED) Anti invisibility.
-* Anti weapon spown.
-* Anti entity spown.
+* Anti weapon spawn.
+* Anti entity spawn.
 * (IMPROVED) Mod Menu detection.
 * Direct in-game Ban.
   - Ban for Ip, steam, discord, fivem, xbox, game license.
@@ -65,7 +65,9 @@
 
 ## How To Use
 
-Insert the Ac inside the RESOURCE server folder, and add the ac on the server config file!
+Insert the Ac inside the RESOURCE server folder, and add the AC on the server config file!
+
+Please change the folder name, many mod menu as Eulen can trace the list of resources and stop them!
 
 You need to install the AC using TxAdmin, on the server console:
 
@@ -139,14 +141,12 @@ RegisterCommand("banlist", function(_src, arg)
 	local source = _src
 	local gruppo = nil
 	print("eseguo comando")
-	-- print(source)
 	if FNX:Bypass(source) then
 
 		local File = LoadResourceFile(GetCurrentResourceName(), "bans.json")
 		local Table = json.decode(File)
 
 		if type(Table) == "table" then
-			-- print("eseguo unban...")
 
 			for b, BanTable in ipairs(Table) do
 				Table[b] = BanTable.name
@@ -157,7 +157,7 @@ RegisterCommand("banlist", function(_src, arg)
 		"webhook"
 		PerformHttpRequest(WebhookFenix, function()
     
-		.
+    .
     .
     .
     .
