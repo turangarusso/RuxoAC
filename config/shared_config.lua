@@ -1,7 +1,7 @@
 
 
 FenixACC = {
-    AntiGodmode = true,  -- Must be active
+    AntiGodmode = false,  
 
     WarnGiveWeapon  = true, --R
 
