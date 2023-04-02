@@ -108,6 +108,15 @@ Screen = function ()
 end
 
 ```
+You MUST add your discord and steam discord id in the config server file, for admin and staff.
+
+```
+	BypassAdmin = {
+		"steam:11000014871fc9f", 
+		"discord:849207069461577739",
+		
+	},
+```
 
 To change custom ban message edit:
 ```lua
@@ -174,7 +183,7 @@ end)
 ```
 
 > **Note**
-> You need also to edit config files
+> You need also to edit config files, test it with your script and edit the config file if you have any issue.
 
 
 ## Credits
