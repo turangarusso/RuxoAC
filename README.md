@@ -108,7 +108,7 @@ Screen = function ()
 end
 
 ```
-You MUST add your discord and steam discord id in the config server file, for admin and staff.
+You MUST add your discord and steam discord id in the config server file, for admin and server staff.
 
 ```
 	BypassAdmin = {
