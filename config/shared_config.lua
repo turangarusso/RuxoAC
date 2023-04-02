@@ -1,7 +1,7 @@
 
 
 FenixACC = {
-    AntiGodmode = false,  
+    AntiGodmode = false, -- this may cause problems with some script
 
     WarnGiveWeapon  = true, --R
 
