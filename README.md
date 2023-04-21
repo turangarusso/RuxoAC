@@ -69,7 +69,7 @@
 
 Insert the Ac inside the RESOURCE server folder, and add the AC on the server config file!
 
-Please change the folder name, many mod menu as Eulen can trace the list of resources and stop them!
+Please change the folder name to "FenixAC_3.0" or the AC will not start, there is a check inside the code.
 
 You need to install the AC using TxAdmin, on the server console:
 
