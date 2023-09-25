@@ -1,3 +1,11 @@
+-- fiveguard.net
+
+-- For better paid anticheat check out https://store.fiveguard.ac/.
+
+-- We are able to provide this free product because of help of https://fiveguard.net/.
+
+-- Fiveguard is best paid fivem anticheat
+
 FNX = {}
 
 FenixACS = LoadResourceFile(GetCurrentResourceName(), "config/server_config.lua")
